@@ -6,17 +6,15 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:26:47 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 08:37:37 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:07:05 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-void ft_putchar(char c);
-
-void ft_putendl(const char *s)
+void	ft_putendl(const char *s)
 {
-  while (s++)
-    write(1, s, 1);
-  ft_putchar('\n');
+	while (s++)
+		write(1, s, 1);
+	ft_putchar('\n');
 }

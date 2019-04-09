@@ -6,13 +6,13 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 00:17:04 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 07:35:11 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:05:17 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
-  write(1, &c, 1);
+	write(1, &c, 1);
 }

@@ -6,15 +6,15 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 08:06:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 08:11:33 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 22:27:27 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
-  int i;
+	int i;
 
-  i = -1;
-  while (s[++i])
-    f(&s[i]);
+	i = -1;
+	while (s[++i])
+		f(&s[i]);
 }

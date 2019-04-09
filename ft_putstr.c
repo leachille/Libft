@@ -6,17 +6,17 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 00:18:39 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 07:33:36 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:06:45 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-void ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-  int i;
+	int i;
 
-  i = -1;
-  while (s[++i])
-    write(1, &s[i], 1);
+	i = -1;
+	while (s[++i])
+		write(1, &s[i], 1);
 }

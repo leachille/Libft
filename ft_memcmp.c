@@ -6,21 +6,21 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:46:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 07:14:54 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:08:09 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-  int				result;
+	int		result;
 	size_t	i;
-  char *tmp1;
-  char *tmp2;
+	char	*tmp1;
+	char	*tmp2;
 
-  tmp1 = (char *)s1;
-  tmp2 = (char *)s2;
+	tmp1 = (char *)s1;
+	tmp2 = (char *)s2;
 	i = 0;
 	while (tmp1[i] == tmp2[i] && i <= n)
 	{

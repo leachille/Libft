@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 04:32:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:58:31 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 22:34:34 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,13 +52,15 @@ char	*recursive(int i, int n, char *dst, int len)
 
 	if (n < 0)
 	{
-		dst = alloc_ar(n);
+		if (!(dst = alloc_ar(n)))
+			return (NULL);
 		dst[0] = '-';
 		n *= -1;
 		len = -42;
 	}
 	if (i == len)
-		dst = alloc_ar(n);
+		if (!(dst = alloc_ar(n)))
+			return (NULL);
 	if (n < 10)
 	{
 		dst[i] = n + 48;

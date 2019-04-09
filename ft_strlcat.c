@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 04:57:33 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 18:15:21 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 22:24:23 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
-	int dest_len;
-	size_t i;
+	int		dest_len;
+	size_t	i;
 
 	dest_len = ft_strlen(dest);
 	i = 0;

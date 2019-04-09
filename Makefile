@@ -6,7 +6,7 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
-#    Updated: 2019/04/09 09:26:33 by lachille         ###   ########.fr        #
+#    Updated: 2019/04/09 19:39:40 by lachille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRCS = ft_atoi.c \
 			ft_strdup.c \
 			ft_strequ.c \
 			ft_striter.c \
+			ft_striteri.c \
 			ft_strjoin.c \
 			ft_strlcat.c \
 			ft_strlen.c \
@@ -87,7 +88,7 @@ cleanEXE :
 clean :
 	rm $(OBJS)
 
-fclean : cleanEXE clean
+fclean : clean
 	rm $(NAME)
 
 re : fclean all

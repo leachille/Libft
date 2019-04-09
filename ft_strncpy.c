@@ -6,13 +6,13 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 05:16:28 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 08:32:16 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 09:49:39 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-void	*ft_strncpy(char *dest, const char *src, size_t n)
+char	*ft_strncpy(char *dest, const char *src, size_t n)
 {
 	unsigned int	i;
 

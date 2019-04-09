@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:36:43 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:27:21 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 18:07:31 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int ft_strequ(char const *s1, char const *s2)
 {
-	int result;
 	int i;
 
 	i = 0;

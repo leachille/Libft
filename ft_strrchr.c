@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:24:13 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:28:41 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 20:50:05 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
+	int		i;
+	char	*s2;
 
-	while (s[i])
+	s2 = (char *)s;
+	i = 0;
+	while (s2[i])
 		i++;
-	while (s[i] != c)
+	while (s2[i] != c)
 		i--;
-	return (&s[i]);
+	return (&s2[i]);
 }

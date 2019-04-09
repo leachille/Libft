@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:02:48 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:27:12 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 18:06:44 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void ft_strdel(char **as)
   if (as && *as)
   {
     free(*as);
-    *asaa = NULL;
+    *as = NULL;
   }
 }

@@ -6,26 +6,16 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 04:57:33 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:27:50 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 18:15:21 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fct.h"
 
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strlcat(char *dest, char *src, size_t n)
+size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	int dest_len;
-	int i;
+	size_t i;
 
 	dest_len = ft_strlen(dest);
 	i = 0;
@@ -35,5 +25,5 @@ char	*ft_strlcat(char *dest, char *src, size_t n)
 		i++;
 	}
 	dest[dest_len + i] = '\0';
-	return (ft_strlen(dest));
+	return ((char)ft_strlen(dest));
 }

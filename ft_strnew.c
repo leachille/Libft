@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 19:59:10 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 20:51:53 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 22:11:46 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnew(size_t size)
 
 	i = 0;
 	if (!(dst = malloc(sizeof(size + 1))))
-	return (0);
+		return (0);
 	while (i <= size)
 	{
 		dst[i] = '\0';

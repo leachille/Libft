@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:06:46 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 18:25:37 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 22:12:07 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int				result;
+	int		result;
 	size_t	i;
 
 	i = 0;

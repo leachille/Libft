@@ -6,7 +6,7 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:41:21 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 06:26:31 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 09:15:18 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,17 @@
 
 void ft_putnbr(int n)
 {
-  int tmp;
 
+  if(n == -2147483648)
+    ft_putstr("-2147483648")
   if (n < 0)
   {
-    write(1, '-', 1);
+    ft_putchar('-');
     n *= -1;
   }
-  tmp = n;
   if (n > 9)
   {
     ft_putnbr(n / 10);
   }
-  tmp = tmp % 10 + '0';
-  write(1, &tmp, 1);
+  ft_putchar(n % 10 + '0');
 }

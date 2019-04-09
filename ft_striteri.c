@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/09 08:06:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 08:11:33 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/06 20:22:41 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/09 08:12:05 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
-{
-  int i;
+#include "fct.h"
 
-  i = -1;
-  while (s[++i])
-    f(&s[i]);
+void ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+  unsigned int i;
+
+  i = 0;
+  while (s[i])
+  {
+    f(i, &s[i]);
+  }
 }

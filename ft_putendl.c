@@ -6,9 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:26:47 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 04:43:59 by anonymous        ###   ########.fr       */
+/*   Updated: 2019/04/09 06:26:17 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 void ft_putendl(char const *s)
 {

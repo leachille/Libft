@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 20:56:44 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 05:23:40 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:24:47 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_atoi(char *str)
 {

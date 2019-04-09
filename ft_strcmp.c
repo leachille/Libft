@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:08:14 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/05 21:08:17 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:27:03 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_strcmp(char *s1, char *s2)
 {

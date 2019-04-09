@@ -6,19 +6,23 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 04:31:02 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/08 04:07:05 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 07:23:36 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memset (void *tab, int o, size_t n)
-{
-  int i;
+#include "fct.h"
 
-  i = (unsigned char *)tab;
-  while (tab[i] != '\0' && i <= n)
+void *ft_memset (void *tab, int o, size_t n)
+{
+  size_t i;
+  char *tmp;
+
+  tmp = (char *)tab;
+  i = 0;
+  while (tmp[i] != '\0' && i <= n)
   {
-    tab[i] = o;
+    tmp[i] = (char)o;
     i++;
   }
-  return (tab);
+  return (tmp);
 }

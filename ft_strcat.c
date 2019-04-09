@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 04:53:35 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 05:25:22 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:26:47 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_strlen(char *str)
 {

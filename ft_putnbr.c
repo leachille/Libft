@@ -6,9 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:41:21 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 04:44:29 by anonymous        ###   ########.fr       */
+/*   Updated: 2019/04/09 06:26:31 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 void ft_putnbr(int n)
 {

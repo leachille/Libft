@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:02:48 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 20:22:24 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:27:12 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 void ft_strdel(char **as)
 {

@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:39:46 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 20:41:09 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:29 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int ft_strnequ(char const *s1, char const *s2, size_t n)
 {

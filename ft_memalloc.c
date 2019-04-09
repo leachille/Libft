@@ -6,13 +6,15 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 11:19:25 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 11:28:13 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 07:01:33 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "fct.h"
+
 void *ft_memalloc(size_t size)
 {
-  void *tmp;
+  unsigned char *tmp;
   int i;
 
   i = 0;
@@ -23,5 +25,5 @@ void *ft_memalloc(size_t size)
       tmp[i] = 0;
       i++;
     }
-  return (size);
+  return (tmp);
 }

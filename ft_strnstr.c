@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:17:59 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/05 21:20:18 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:36 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*ft_strnstr(char *str, char *to_find, size_t len)
 {

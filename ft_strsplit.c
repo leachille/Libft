@@ -6,9 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 23:28:57 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/08 04:31:09 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:45 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*ft_tweaked_strdup(char *src, char c)
 {

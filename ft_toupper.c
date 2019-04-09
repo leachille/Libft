@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 19:33:39 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 09:17:38 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:29:04 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int	ft_toupper(int c)
 {

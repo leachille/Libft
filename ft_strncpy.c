@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 05:16:28 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 06:03:39 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:24 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

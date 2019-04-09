@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:23:57 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/08 06:58:30 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 07:19:29 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -30,10 +32,14 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*tmp;
+	char *dst2;
+	char *src2;
 
-	if(!dst = (char *)malloc(sizeof(dst) * len));
-	dst = (char *)ft_strncpy(dst, tmp, len);
-	free(dst);
-	return (dst);
+	dst2 = (char *)dst;
+	src2 = (char *)src;
+	if(!(dst2 = (char *)malloc(sizeof(dst2) * len)))
+		return (0);
+	dst2 = (char *)ft_strncpy(dst2, src2, len);
+	free(dst2);
+	return (dst2);
 }

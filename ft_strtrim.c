@@ -6,9 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 22:56:31 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/07 23:22:18 by anonymous        ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:55 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_strlen(char *str)
 {

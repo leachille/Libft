@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:22:41 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 20:25:31 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:27:26 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 void ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

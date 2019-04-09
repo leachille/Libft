@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 20:55:32 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 06:00:56 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:25:01 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_isalpha(int c)
 {

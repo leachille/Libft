@@ -6,20 +6,25 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:08:59 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 10:22:00 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 07:10:10 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
+#include "fct.h"
+
+void *ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-  int i;
-  int j;
+  size_t i;
+  unsigned char *dst2 = (unsigned char *)dst;
+  unsigned char *src2 = (unsigned char *)src;
 
   i = 0;
-  while (n-- && src[i] != c)
+  while (n-- && src2[i] != c)
   {
-    dst[i] = src[i];
+    dst2[i] = src2[i];
     i++;
   }
-  return (dst);
+  if (n == 0 && src2[i] != c)
+    return (NULL);
+  return (dst2);
 }

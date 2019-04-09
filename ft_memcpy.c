@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 08:52:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/08 04:23:47 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:25:47 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 void *ft_memcpy(void *dst, const void * src, size_t n)
 {

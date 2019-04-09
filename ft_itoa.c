@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 04:32:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/08 09:51:04 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:58:31 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*alloc_ar(int n)
 {
@@ -31,7 +33,6 @@ char	*alloc_ar(int n)
 
 int		ft_len(int n, int i)
 {
-	i = 0;
 	if (n < 0)
 	{
 		i += 1;
@@ -74,6 +75,8 @@ char	*ft_itoa(int n)
 	char	*dst;
 	int		len;
 
+	i = 0;
+	dst = NULL;
 	len = ft_len(n, i);
 	i = len;
 	return (recursive(i, n, dst, len));

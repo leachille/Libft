@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:24:13 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 09:17:41 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:41 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

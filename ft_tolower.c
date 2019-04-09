@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lachille <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 19:24:18 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 06:03:59 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:28:59 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_tolower(int c)
 {

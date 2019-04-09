@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:36:43 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 20:37:11 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:27:21 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int ft_strequ(char const *s1, char const *s2)
 {

@@ -6,9 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 20:51:42 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/06 05:24:15 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 06:24:54 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "fct.h"
 
 int		ft_isalnum(int c)
 {

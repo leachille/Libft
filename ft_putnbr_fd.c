@@ -6,11 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:45:00 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 22:58:29 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:47 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:46:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:08:09 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:07 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {

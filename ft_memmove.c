@@ -6,11 +6,11 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:23:57 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:06:04 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:20 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
 void	*ft_memmove(const void *dst, const void *src, size_t len)
 {

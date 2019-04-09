@@ -6,13 +6,13 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 04:32:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 22:34:34 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:45:54 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
-char	*alloc_ar(int n)
+static	char	*alloc_ar(int n)
 {
 	char	*dst;
 	int		i;
@@ -31,7 +31,7 @@ char	*alloc_ar(int n)
 	return (dst);
 }
 
-int		ft_len(int n, int i)
+static	int		ft_len(int n, int i)
 {
 	if (n < 0)
 	{
@@ -46,7 +46,7 @@ int		ft_len(int n, int i)
 	return (i);
 }
 
-char	*recursive(int i, int n, char *dst, int len)
+static	char	*recursive(int i, int n, char *dst, int len)
 {
 	int		nb;
 
@@ -71,7 +71,7 @@ char	*recursive(int i, int n, char *dst, int len)
 	return (recursive(i - 1, n / 10, dst, len));
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	int		i;
 	char	*dst;

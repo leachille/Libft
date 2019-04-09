@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fct.h                                              :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 06:17:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 08:29:13 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:21:56 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FCT_H
-# define FCT_H
+#ifndef LIBFT_H
+# define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>

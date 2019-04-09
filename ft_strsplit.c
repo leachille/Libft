@@ -6,13 +6,13 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 19:56:27 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 20:40:56 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:47:41 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
-char	*ft_tweaked_strdup(const char *src, char c)
+static	char	*ft_tweaked_strdup(const char *src, char c)
 {
 	int		len;
 	char	*dup;
@@ -34,7 +34,7 @@ char	*ft_tweaked_strdup(const char *src, char c)
 	return (dup);
 }
 
-int		is_new_word(const char *str, char c, int i)
+static	int		is_new_word(const char *str, char c, int i)
 {
 	if (str[i] != c && str[i - 1] == c)
 		return (1);
@@ -42,7 +42,7 @@ int		is_new_word(const char *str, char c, int i)
 		return (0);
 }
 
-int		ft_count_words(const char *str, char c)
+static	int		ft_count_words(const char *str, char c)
 {
 	int		i;
 	int		count;
@@ -58,7 +58,8 @@ int		ft_count_words(const char *str, char c)
 	return (count);
 }
 
-char	**filling_array(int *index, char **split, char c, const char *str)
+static	char	**filling_array(int *index, char **split, char c,
+	const char *str)
 {
 	int		i;
 
@@ -75,7 +76,7 @@ char	**filling_array(int *index, char **split, char c, const char *str)
 	return (split);
 }
 
-char	**ft_strsplit(char const *str, char c)
+char			**ft_strsplit(char const *str, char c)
 {
 	char	**split;
 	int		index;

@@ -6,11 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 04:31:02 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 23:01:33 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:24 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
 void	*ft_memset(void *tab, int o, size_t n)
 {

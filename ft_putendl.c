@@ -6,11 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:26:47 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 23:07:05 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:23:43 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
 void	ft_putendl(const char *s)
 {

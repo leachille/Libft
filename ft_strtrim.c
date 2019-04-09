@@ -6,13 +6,13 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 22:56:31 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 20:44:12 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/09 23:46:10 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fct.h"
+#include "libft.h"
 
-int		dest_len(size_t *i, size_t *j, const char *s)
+static	int		dest_len(size_t *i, size_t *j, const char *s)
 {
 	size_t	l_dst;
 
@@ -27,7 +27,7 @@ int		dest_len(size_t *i, size_t *j, const char *s)
 	return (l_dst = l_dst - (*i + *j));
 }
 
-char	*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *s)
 {
 	size_t	i;
 	size_t	j;

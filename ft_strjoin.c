@@ -6,13 +6,13 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:50:14 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:45:39 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/10 00:44:36 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	epur_len(const char *s1, const char *s2)
+int		epur_len(const char *s1, const char *s2)
 {
 	int		i;
 	int		j;
@@ -30,7 +30,7 @@ static	int	epur_len(const char *s1, const char *s2)
 	return (i + j + 1);
 }
 
-char		*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*dest;
 	int		i;

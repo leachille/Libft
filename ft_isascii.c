@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 20:50:04 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:22:46 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/10 02:46:08 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int		ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (c);
+		return (1);
 	return (0);
 }

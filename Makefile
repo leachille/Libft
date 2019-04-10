@@ -6,7 +6,7 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
-#    Updated: 2019/04/09 23:37:16 by lachille         ###   ########.fr        #
+#    Updated: 2019/04/10 01:28:06 by lachille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,26 +71,29 @@ FLAG = -Wextra -Werror -Wall
 
 PROG = "a preciser || ex: make compil PROG=atoi"
 
-all: $(NAME)
-
 $(NAME) :
 	gcc $(FLAG) -c $(SRCS)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-#compil : ##compil une fonction en .o
-#	gcc $(FLAG) -c ft_$(PROG).c
-#
-#compil2 : compil  ##compil le .o d'une fonction precise et creer un executable avec un main dans le repertoire test
-#	gcc $(FLAG) -o $(PROG)_EXE ft_$(PROG).o Test/Test_$(PROG).c
-#
-#cleanEXE :
-#	rm *_EXE
+all : $(NAME)
+
+compil : ##compil une fonction en .o
+	gcc $(FLAG) -c ft_$(PROG).c
+
+compil2 : compil  ##compil le .o d'une fonction precise et creer un executable avec un main dans le repertoire test
+	gcc $(FLAG) -c Test_$(PROG).c
+	gcc $(FLAG) -o $(PROG)_EXE ft_$(PROG).o Test_$(PROG).o
+
+cleanEXE :
+	rm *_EXE
 
 clean :
-	rm $(OBJS)
+	rm -f $(OBJS)
 
 fclean : clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re : fclean all
+
+.PHONY : clean fclean

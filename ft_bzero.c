@@ -6,13 +6,13 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/04 04:53:17 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 23:42:37 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/10 00:39:55 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	void	bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
 	unsigned char	*tmp;

@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:08:59 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/10 03:11:38 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/10 05:26:31 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*dst2;
 	unsigned char	*src2;
 

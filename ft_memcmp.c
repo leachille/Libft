@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:46:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:23:07 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/10 05:48:45 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int		result;
-	size_t	i;
-	char	*tmp1;
-	char	*tmp2;
+	int				result;
+	size_t			i;
+	unsigned char	*tmp1;
+	unsigned char	*tmp2;
 
-	tmp1 = (char *)s1;
-	tmp2 = (char *)s2;
+	result = 0;
+	tmp1 = (unsigned char *)s1;
+	tmp2 = (unsigned char *)s2;
 	i = 0;
-	while (tmp1[i] == tmp2[i] && i <= n)
+	while (tmp1[i] == tmp2[i] && i < n && tmp1[i])
 	{
-		if (tmp1[i] == '\0')
-			return (0);
+		result = result + (int)(tmp1[i] - tmp2[i]);
 		i++;
 	}
 	result = tmp1[i] - tmp2[i];

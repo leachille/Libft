@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 06:17:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/10 03:24:45 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/12 21:45:37 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+typedef struct s_list
+{
+void *content;
+size_t content_size;
+struct s_list *next;
+} t_list;
 
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);

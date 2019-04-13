@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:39:46 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 22:11:23 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/13 08:57:33 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	size_t i;
-
-	i = 0;
-	while (s1[i] && s2[i] && i <= n)
-	{
-		if (s1[i] != s2[i])
-			return (0);
-		i++;
-	}
-	return (1);
+	if (!(s1) || !(s2))
+		return (0);
+	if (!(*s1) && !(*s2))
+		return (1);
+	if (!n--)
+		return (1);
+	if (*s1 == *s2)
+		return (ft_strnequ(s1 + 1, s2 + 1, n--));
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:26:47 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 23:23:43 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/13 12:26:27 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl(const char *s)
 {
-	while (s++)
-		write(1, s, 1);
+	while (*s)
+		ft_putchar(*s++);
 	ft_putchar('\n');
 }

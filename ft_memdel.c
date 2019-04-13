@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 11:30:12 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:23:16 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/13 08:44:54 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 
 void	ft_memdel(void **ap)
 {
-	int i;
-
-	i = 0;
-	while (ap[i])
+	if (ap != NULL)
 	{
-		free(ap[i]);
-		ap[i] = NULL;
-		i++;
+		free(*ap);
+		*ap = 0;
 	}
 }

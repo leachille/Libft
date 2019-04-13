@@ -6,7 +6,7 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 04:45:00 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/09 23:23:47 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/13 12:42:44 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,19 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int tmp;
-
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
+		return ;
+	}
 	if (n < 0)
 	{
-		write(fd, "-", 1);
+		ft_putchar_fd('-', fd);
 		n *= -1;
 	}
-	tmp = n;
 	if (n > 9)
 	{
-		ft_putnbr(n / 10);
+		ft_putnbr_fd(n / 10, fd);
 	}
-	tmp = tmp % 10 + '0';
-	write(fd, &tmp, 1);
+	ft_putchar_fd(n % 10 + '0', fd);
 }

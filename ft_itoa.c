@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 04:32:56 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:45:54 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/13 12:00:15 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static	char	*alloc_ar(int n)
 	return (dst);
 }
 
-static	int		ft_len(int n, int i)
+static	int		ft_len(long n, int i)
 {
 	if (n < 0)
 	{
@@ -46,7 +46,7 @@ static	int		ft_len(int n, int i)
 	return (i);
 }
 
-static	char	*recursive(int i, int n, char *dst, int len)
+static	char	*recursive(int i, long n, char *dst, int len)
 {
 	int		nb;
 

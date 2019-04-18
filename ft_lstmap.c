@@ -1,22 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/16 15:17:17 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/18 15:22:53 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/18 16:01:05 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/18 16:36:58 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+t_list * ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	if (alst && new)
+	t_list *first;
+	t_list *list2;
+	if (!lst || !*f)
+		return (NULL);
+	list2 = NULL;
+	while (lst)
 	{
-		new->next = *alst;
-		*alst = new;
+		list2 = (*f)(lst);
+		if (first)
+		{
+			first->next = list2;
+			first = first->next;
+		}
+		else
+		{
+			first = list2;
+		}
+		lst = lst->next;
 	}
+	return (list2);
 }

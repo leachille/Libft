@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 11:19:25 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/13 08:42:43 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/18 15:54:52 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ void	*ft_memalloc(size_t size)
 	if (!(tmp = malloc(sizeof(tmp) * size)))
 		return (NULL);
 	ft_bzero(tmp, size);
-	return (tmp);
+	return(tmp);
 }

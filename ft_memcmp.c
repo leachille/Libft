@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:46:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/12 23:15:48 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/19 07:04:29 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n)
 	while (tmp1[i] == tmp2[i] && i <= n)
 	{
 		i++;
-		if (i == (unsigned int)n || (tmp1[i] == '\0' && tmp2[i] == '\0'))
+		if (i == (unsigned int)n)
 			return (0);
 	}
 	result = tmp1[i] - tmp2[i];

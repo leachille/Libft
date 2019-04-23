@@ -6,7 +6,11 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
+<<<<<<< HEAD
 #    Updated: 2019/04/22 17:49:20 by leo              ###   ########.fr        #
+=======
+#    Updated: 2019/04/19 19:24:15 by lachille         ###   ########.fr        #
+>>>>>>> master
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,7 +67,13 @@ SRCS = ft_atoi.c \
 			ft_strsub.c \
 			ft_strtrim.c \
 			ft_tolower.c \
-			ft_toupper.c
+			ft_toupper.c \
+			ft_lstmap.c \
+			ft_lstnew.c \
+			ft_lstiter.c \
+			ft_lstdel.c \
+			ft_lstdelone.c \
+			ft_lstadd.c
 
 OBJS = $(SRCS:.c=.o)
 

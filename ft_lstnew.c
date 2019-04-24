@@ -6,15 +6,16 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 21:46:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/12 22:30:28 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/24 19:56:30 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstnew(void const *content, size_t content_size)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
 	t_list *dest;
+
 	dest = malloc(sizeof(dest));
 	if (dest == NULL)
 		return (NULL);

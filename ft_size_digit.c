@@ -6,15 +6,15 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/25 03:16:30 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/25 03:16:32 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 18:19:23 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	ft_size_digit(long long n)
+long	ft_size_digit(long n)
 {
-	size_t i;
+	long i;
 
 	i = 0;
 	i = (n <= 0 ? 1 : 0);

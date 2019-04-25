@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 10:23:57 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/25 03:07:08 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 15:58:44 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,17 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	tmp[len];
+	unsigned char *dst2;
+	unsigned char *src2;
 
-	ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
+	dst2 = (unsigned char *)dst;
+	src2 = (unsigned char *)src;
+	if (dst > src)
+	{
+		while (len--)
+			dst2[len] = src2[len];
+	}
+	else
+		ft_memcpy(dst, src, len);
 	return (dst);
 }

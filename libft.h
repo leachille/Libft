@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 06:17:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/25 03:19:32 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 15:03:57 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ typedef	struct		s_list
 	struct s_list	*next;
 }					t_list;
 
-size_t				ft_size_digit(long long n);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
@@ -68,7 +67,7 @@ char				*ft_strsub(const char *s, unsigned int start, size_t len);
 char				*ft_strjoin(const char *s1, const char *s2);
 char				*ft_strtrim(const char *s);
 char				**ft_strsplit(const char *s, char c);
-char				*ft_itoa(long long int n);
+char				*ft_itoa(int n);
 void				ft_putchar(char c);
 void				ft_putstr(const char *s);
 void				ft_putendl(const char *s);
@@ -84,5 +83,8 @@ void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+void				ft_displayfile(int ac, char **av);
+size_t				ft_size_digit(long long n);
 
 #endif

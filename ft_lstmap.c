@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/18 16:01:05 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/24 19:56:36 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 00:09:12 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,27 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list *first;
-	t_list *list2;
+	t_list *newlst;
+	t_list *newfirst;
+	t_list *current;
 
 	if (!lst || !*f)
 		return (NULL);
-	list2 = NULL;
+	newfirst = NULL;
 	while (lst)
 	{
-		list2 = (*f)(lst);
-		if (first)
+		newlst = (f)(lst);
+		if (newfirst)
 		{
-			first->next = list2;
-			first = first->next;
+			current->next = newlst;
+			current = current->next;
 		}
 		else
 		{
-			first = list2;
+			newfirst = newlst;
+			current = newfirst;
 		}
 		lst = lst->next;
 	}
-	return (list2);
+	return (newfirst);
 }

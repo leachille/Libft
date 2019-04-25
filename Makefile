@@ -6,14 +6,14 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
-#    Updated: 2019/04/23 19:05:33 by anonymous        ###   ########.fr        #
+#    Updated: 2019/04/25 03:17:03 by lachille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRCS = ft_atoi.c \
+SRCS =		ft_atoi.c \
 			ft_bzero.c \
 			ft_isascii.c \
 			ft_isalnum.c \
@@ -70,7 +70,9 @@ SRCS = ft_atoi.c \
 			ft_lstiter.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
-			ft_lstadd.c
+			ft_lstadd.c \
+            ft_displayfile.c\
+			ft_size_digit.c
 
 OBJS = $(SRCS:.c=.o)
 

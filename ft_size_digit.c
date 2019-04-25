@@ -1,30 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_size_digit.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/06 20:25:41 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/25 03:12:57 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/25 03:16:30 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/25 03:16:32 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
-char	*ft_strmap(char const *s, char (*f)(char))
+size_t	ft_size_digit(long long n)
 {
-	int		i;
-	char	*str;
+	size_t i;
 
-	if (s == NULL || !(*f) || !(str = ft_strdup(s)))
-		return (NULL);
 	i = 0;
-	while (str[i])
+	i = (n <= 0 ? 1 : 0);
+	while (n != 0)
 	{
-		str[i] = (*f)(str[i]);
+		n = n / 10;
 		i++;
 	}
-	str[i] = 0;
-	return (str);
+	return (i);
 }

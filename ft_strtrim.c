@@ -6,7 +6,7 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 22:56:31 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/13 10:16:33 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 03:28:51 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strtrim(char const *s)
 	size_t	len;
 
 	i = 0;
+	if (!s)
+		return (0);
 	len = ft_strlen(s);
 	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t' || s[i] == ',')
 		i++;

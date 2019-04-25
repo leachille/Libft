@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 08:52:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 23:23:12 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/24 23:49:21 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,12 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*dst2;
-	unsigned char	*src2;
-	int				i;
+	char		*dst2;
+	const char	*src2;
 
-	dst2 = (unsigned char *)dst;
-	src2 = (unsigned char *)src;
-	i = 0;
+	dst2 = (char *)dst;
+	src2 = (const char *)src;
 	while (n--)
-	{
-		dst2[i] = src2[i];
-		i++;
-	}
-	return (dst2);
+		*dst2++ = *src2++;
+	return (dst);
 }

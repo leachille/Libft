@@ -6,15 +6,15 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 19:33:39 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 06:29:04 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 00:03:16 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int		ft_toupper(int c)
 {
-	if (c >= 97 && c <= 122)
-		c = c - 32;
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
 	return (c);
 }

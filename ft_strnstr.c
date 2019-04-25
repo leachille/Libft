@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/05 21:17:59 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/13 07:01:47 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 03:03:58 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,19 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
-	size_t	len2;
+	int		i;
+	size_t	j;
 
-	if (ft_strlen(s1) == 0 || ft_strlen(s2) == 0)
-		return ((char *)s1);
-	len2 = ft_strlen(s2);
-	while (*s1 && len-- >= len2)
+	i = 0;
+	while (s1[i])
 	{
-		if (*s1 == *s2 && !(ft_memcmp(s1, s2, len2)))
-			return ((char *)s1);
-		s1++;
+		j = 0;
+		while (s2[j] && s1[i + j] == s2[j] &&
+				(j + i) < len)
+			j++;
+		if (!(s2[j]))
+			return ((char *)(s1 + i));
+		i++;
 	}
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/06 20:32:04 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/09 22:18:34 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/25 03:13:11 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
-	char	*dest;
+	char	*str;
 
+	if (s == NULL || !(*f) || !(str = ft_strdup(s)))
+		return (NULL);
 	i = 0;
-	if (!(dest = malloc(sizeof(1 + ft_strlen(s)))))
-		return (0);
-	while (s[i])
+	while (str[i])
 	{
-		dest[i] = f(i, s[i]);
+		str[i] = (*f)(i, str[i]);
 		i++;
 	}
-	return (dest);
+	return (str);
 }

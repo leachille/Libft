@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 06:17:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/25 15:03:57 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/27 23:04:09 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <fcntl.h>
 
 typedef	struct		s_list
 {
@@ -86,5 +87,11 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 void				ft_displayfile(int ac, char **av);
 size_t				ft_size_digit(long long n);
+char				*ft_realloc(char *s1, char *add);
+char				*ft_strcpy_alloc(char *dest, const char *src);
+unsigned long		ft_strlen_c(char *str, int c);
+char				*cpy_after_c(char *str, int c);
+char				*ft_strcpy_c(char *str, int c);
+char				*init_after_c(char *str, int c);
 
 #endif

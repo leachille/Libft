@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy_alloc.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/27 22:33:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/27 22:33:16 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/27 22:50:27 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/27 23:05:52 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+char	*ft_strcpy_alloc(char *dest, const char *src)
 {
-	if (n == -2147483648)
+	int i;
+
+	i = 0;
+	if (!(dest = malloc(sizeof(*dest) * (ft_strlen(src) + 1))))
+		return (0);
+	while (src[i] != '\0')
 	{
-		ft_putstr("-2147483648");
-		return ;
+		dest[i] = src[i];
+		i++;
 	}
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n *= -1;
-	}
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-	ft_putchar(n % 10 + '0');
+	dest[i] = '\0';
+	free(dest);
+	return (dest);
 }

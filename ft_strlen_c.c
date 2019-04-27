@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strlen_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/27 22:33:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/27 22:33:16 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/27 22:21:32 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/27 22:22:05 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+unsigned long	ft_strlen_c(char *str, int c)
 {
-	if (n == -2147483648)
+	unsigned long i;
+
+	i = 0;
+	while (str[i])
 	{
-		ft_putstr("-2147483648");
-		return ;
+		if (str[i] == c)
+			return (i);
+		i++;
 	}
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n *= -1;
-	}
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-	ft_putchar(n % 10 + '0');
+	return (i);
 }

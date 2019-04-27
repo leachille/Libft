@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   cpy_after_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/27 22:33:08 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/27 22:33:16 by lachille         ###   ########.fr       */
+/*   Created: 2019/04/27 22:49:54 by lachille          #+#    #+#             */
+/*   Updated: 2019/04/27 23:07:06 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+char	*cpy_after_c(char *str, int c)
 {
-	if (n == -2147483648)
+	int		i;
+	char	*tmp;
+
+	i = 0;
+	if (!(tmp = malloc(sizeof(*tmp) * (ft_strlen(str) + 1))))
+		return (0);
+	while (*str != c)
+		str++;
+	while (str[i])
 	{
-		ft_putstr("-2147483648");
-		return ;
+		tmp[i] = str[i];
+		i++;
 	}
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n *= -1;
-	}
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-	ft_putchar(n % 10 + '0');
+	free(tmp);
+	return (tmp);
 }

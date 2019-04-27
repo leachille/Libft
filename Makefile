@@ -6,7 +6,7 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
-#    Updated: 2019/04/25 03:17:03 by lachille         ###   ########.fr        #
+#    Updated: 2019/04/27 23:01:55 by lachille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 # **************************************************************************** #
@@ -71,8 +71,14 @@ SRCS =		ft_atoi.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
 			ft_lstadd.c \
-            ft_displayfile.c\
-			ft_size_digit.c
+            ft_displayfile.c \
+			ft_size_digit.c \
+			init_after_c.c \
+			ft_strlen_c.c \
+			ft_strcpy_c.c \
+			ft_strcpy_alloc.c \
+			ft_realloc.c \
+			cpy_after_c.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -6,12 +6,11 @@
 /*   By: anonymou <anonymou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/23 18:34:38 by anonymou          #+#    #+#             */
-/*   Updated: 2019/04/24 22:02:17 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/27 22:30:51 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_displayfile(int ac, char **av)
 {

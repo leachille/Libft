@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/27 22:50:27 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/27 23:05:52 by lachille         ###   ########.fr       */
+/*   Updated: 2019/04/28 01:17:05 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,5 @@ char	*ft_strcpy_alloc(char *dest, const char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	free(dest);
 	return (dest);
 }

@@ -6,10 +6,10 @@
 #    By: lachille <lachille@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 05:27:21 by lachille          #+#    #+#              #
-#    Updated: 2019/04/27 23:01:55 by lachille         ###   ########.fr        #
+#    Updated: 2019/10/20 08:33:43 by lachille         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-# **************************************************************************** #
+
 
 NAME = libft.a
 
@@ -78,7 +78,9 @@ SRCS =		ft_atoi.c \
 			ft_strcpy_c.c \
 			ft_strcpy_alloc.c \
 			ft_realloc.c \
-			cpy_after_c.c
+			cpy_after_c.c \
+			ft_ulltoa.c \
+			ft_strjoin_free.c
 
 OBJS = $(SRCS:.c=.o)
 

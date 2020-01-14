@@ -6,7 +6,7 @@
 /*   By: lachille <lachille@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 06:17:00 by lachille          #+#    #+#             */
-/*   Updated: 2019/04/27 23:04:09 by lachille         ###   ########.fr       */
+/*   Updated: 2019/10/20 08:34:10 by lachille         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,5 +93,9 @@ unsigned long		ft_strlen_c(char *str, int c);
 char				*cpy_after_c(char *str, int c);
 char				*ft_strcpy_c(char *str, int c);
 char				*init_after_c(char *str, int c);
+char				*ft_ulltoa_base(unsigned long long nb, int base);
+char				*ft_ulltoa(unsigned long long nb);
+char				*ft_strjoin_free(char const *s1, char const *s2, int opt);
+
 
 #endif
